@@ -1,2 +1,2 @@
 # pig-game
-Intractive game with best 
+Intractive game with best UI 

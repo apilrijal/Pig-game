@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>New Pig Game</title>
+  </head>
+  <body>
+    <div class="homepage">
+      <div class="player--section">
+        <h1 class="header--main">Welcome to Pig Game : 🐷🐷</h1>
+        <!-- <h2 class="sub--header">Please, Enter player names to play!</h2> -->
+        <form id="player--form" action="" method="post">
+          <label for="player--one">Enter Player 1:</label><br />
+          <input
+            type="text"
+            id="player--one"
+            maxlength="10"
+            placeholder="John"
+          /><br />
+          <label for="player--two">Enter Player 2:</label><br />
+          <input
+            type="text"
+            id="player--two"
+            maxlength="10"
+            placeholder="Smith"
+          /><br />
+          <input class="player--submit" type="submit" value="Play 🐷"></input>
+        </form>
+      </div>
+      <main class="game" id="game-screen">
+        <section class="player player--0 player--active">
+          <h2 class="name" id="name--0">Player 1</h2>
+          <p class="score" id="score--0">43</p>
+          <div class="current">
+            <p class="current-label">Current</p>
+            <p class="current-score" id="current--0">0</p>
+          </div>
+        </section>
+        <section class="player player--1">
+          <h2 class="name" id="name--1">Player 2</h2>
+          <p class="score" id="score--1">24</p>
+          <div class="current">
+            <p class="current-label">Current</p>
+            <p class="current-score" id="current--1">0</p>
+          </div>
+        </section>
+
+        <img src="dice-5.png" alt="Playing dice" class="dice" />
+        <button class="btn btn--new">🔄 New game</button>
+        <button class="btn btn--roll">🎲 Roll dice</button>
+        <button class="btn btn--hold">📥 Hold</button>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
